@@ -51,50 +51,37 @@ a {
 }
 
 header {
-  display: flex;
-}
-
-.banniere {
   color: #ffcc33;
   text-align: center;
   background-color: #579c87;
-}
-.banniere__haut {
-  font-family: "Montserrat", Arial;
+  display: flex;
   font-weight: 700;
   padding: 15px 0;
   height: 120px;
 }
-@media (max-width: 768px) {
-  .banniere__haut {
-    width: 100%;
-  }
-}
-.banniere__haut h1 {
+header h1 {
   margin: 0;
   font-size: 6em;
 }
-.banniere__bas {
+
+footer {
+  color: #ffcc33;
+  text-align: center;
+  background-color: #579c87;
+  display: flex;
+  justify-content: space-between;
   font-weight: 400;
   height: 60px;
   font-size: 25px;
-  display: flex;
-  justify-content: space-between;
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: 7rem;
 }
-.banniere__bas .mentions {
-  margin: auto 0 auto 20px;
+footer a {
+  margin: auto 10px auto 10px;
 }
-.banniere__bas .mentions:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: 4000ms infinite;
-}
-.banniere__bas .contact {
-  margin: auto 20px auto 0;
-}
-.banniere__bas .contact:hover {
+footer a:hover {
   animation: shake 0.5s;
   animation-iteration-count: 4000ms infinite;
 }
@@ -222,10 +209,6 @@ header {
 .prochainement p {
   margin: auto;
   font-size: 30px;
-}
-
-footer {
-  margin-top: 7rem;
 }
 
 /*MENU*/
