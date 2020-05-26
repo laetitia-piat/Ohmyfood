@@ -208,7 +208,7 @@ footer a {
 }
 footer a:hover {
   animation: shake 0.5s;
-  animation-iteration-count: 4s infinite;
+  animation-iteration-count: 4;
 }
 
 /*MENU*/
