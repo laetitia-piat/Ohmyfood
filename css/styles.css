@@ -50,6 +50,10 @@ a {
   color: #ffcc33;
 }
 
+header {
+  display: flex;
+}
+
 .banniere {
   color: #ffcc33;
   text-align: center;
@@ -58,9 +62,17 @@ a {
 .banniere__haut {
   font-family: "Montserrat", Arial;
   font-weight: 700;
-  padding-top: 30px;
+  padding: 15px 0;
   height: 120px;
-  font-size: 70px;
+}
+@media (max-width: 768px) {
+  .banniere__haut {
+    width: 100%;
+  }
+}
+.banniere__haut h1 {
+  margin: 0;
+  font-size: 6em;
 }
 .banniere__bas {
   font-weight: 400;
@@ -77,14 +89,14 @@ a {
 }
 .banniere__bas .mentions:hover {
   animation: shake 0.5s;
-  animation-iteration-count: 4000ms;
+  animation-iteration-count: 4000ms infinite;
 }
 .banniere__bas .contact {
   margin: auto 20px auto 0;
 }
 .banniere__bas .contact:hover {
   animation: shake 0.5s;
-  animation-iteration-count: 4000ms;
+  animation-iteration-count: 4000ms infinite;
 }
 
 #conteneur {
