@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/* FONT FONT FONT 
+La note enchantée : Devonshire + Sriracha (Menu) ;
+Le chic à la Française : Croissant one;
+Le délice des papilles : Dancing Script ;
+La palette du gout : Handlee; */
+@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Handlee|Kalam|Sriracha&display=swap");
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+body {
+  font-family: "Montserrat", Arial;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffcc33;
+}
+
+.banniere {
+  color: #ffcc33;
+  text-align: center;
+  background-color: #579c87;
+}
+.banniere__haut {
+  font-family: "Montserrat", Arial;
+  font-weight: 700;
+  padding-top: 30px;
+  height: 120px;
+  font-size: 70px;
+}
+.banniere__bas {
+  font-weight: 400;
+  height: 60px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.banniere__bas .mentions {
+  margin: auto 0 auto 20px;
+}
+.banniere__bas .mentions:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 4000ms;
+}
+.banniere__bas .contact {
+  margin: auto 20px auto 0;
+}
+.banniere__bas .contact:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 4000ms;
+}
+
+#conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 740px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  #conteneur {
+    width: 100%;
+    align-content: center;
+    margin: auto;
+  }
+}
+
+.bloc {
+  width: 280px;
+  height: 370px;
+  display: flex;
+  border: 1px #ededed solid;
+  margin: 30px;
+  box-shadow: 1px 1px 10px grey;
+}
+.bloc__un {
+  background-color: #fcdfdb;
+  color: #3c1218;
+  font-size: 20px;
+}
+.bloc__un p {
+  font-family: "devonshire";
+  font-size: 26px;
+  text-align: center;
+  margin: auto;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+.bloc__un p:hover {
+  transform: scale(1.15);
+}
+.bloc__un p span {
+  font-family: "Sriracha";
+  font-size: 26px;
+}
+.bloc__deux {
+  background-color: #fff5fe;
+}
+.bloc__deux p {
+  margin: auto;
+  text-align: center;
+  font-family: "Croissant one";
+  font-size: 20px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#905bfd));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+.bloc__deux p:hover {
+  transform: scale(1.15);
+}
+.bloc__deux p span {
+  font-family: "Times new roman";
+  font-size: 30px;
+  color: #c77412;
+}
+.bloc__trois {
+  background-color: #e8e8e8;
+}
+.bloc__trois p {
+  margin: auto;
+  text-align: center;
+  font-family: "Dancing Script";
+  font-size: 28px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+.bloc__trois p:hover {
+  transform: scale(1.15);
+}
+.bloc__trois p span {
+  font-family: "Sriracha";
+}
+.bloc__quatre {
+  background-color: #f7fbf7;
+}
+.bloc__quatre p {
+  margin: auto;
+  text-align: center;
+  font-family: "Handlee";
+  font-size: 26px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#347b31), to(#94db68));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+.bloc__quatre p:hover {
+  transform: scale(1.15);
+}
+.bloc__quatre p span {
+  font-family: "Sriracha";
+}
+
+.prochainement {
+  width: 320px;
+  height: 50px;
+  display: flex;
+  border: 1px #ededed solid;
+  color: #ffcc33;
+  border-radius: 10px;
+  background-color: #579c87;
+}
+.prochainement p {
+  margin: auto;
+  font-size: 30px;
+}
+
+footer {
+  margin-top: 7rem;
+}
+
+/*MENU*/
+.conteneur {
+  max-width: 700px;
+  width: 80%;
+  margin: auto;
+}
+.conteneur__menu1 {
+  font-family: "Kalam";
+  background-color: #fcdfdb;
+  color: #3c1218;
+}
+.conteneur__menu2 {
+  font-family: "Times new roman";
+  background-color: #fff5fe;
+}
+.conteneur__menu3 {
+  font-family: "Kalam";
+  background-color: #e8e8e8;
+}
+.conteneur__menu4 {
+  font-family: "Kalam";
+  background-color: #F1F8E9;
+}
+.conteneur h2, .conteneur h3 {
+  text-align: center;
+}
+
+.titre__menu1 {
+  margin-top: 0.5rem;
+  font-family: "devonshire";
+  font-size: 1.4rem;
+}
+.titre__menu1 h2 {
+  font-weight: normal;
+}
+.titre__menu1 img {
+  padding-top: 2rem;
+}
+.titre__menu2 {
+  margin-top: 0.5rem;
+  font-family: "croissant one";
+}
+.titre__menu2 h2 {
+  font-weight: normal;
+  padding: 2rem 0;
+  background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#905bfd));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.titre__menu3 {
+  margin-top: 0.5rem;
+  font-family: "Dancing Script";
+}
+.titre__menu3 h2 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.titre__menu4 {
+  margin-top: 0.5rem;
+  font-family: "Handlee";
+}
+.titre__menu4 h2 {
+  font-size: 2.5rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#347b31), to(#94db68));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu {
+  font-size: 0.9rem;
+}
+.menu .delimit h3 {
+  font-size: 1.1rem;
+  padding-bottom: 0.6rem;
+  margin: 0 3.5rem;
+}
+.menu .delimit h3 .un {
+  float: right;
+  padding-top: 0.9rem;
+}
+.menu .delimit h3 .deux {
+  float: left;
+  padding-top: 0.9rem;
+}
+.menu .delimit__menu2--or {
+  color: #c77412;
+}
+.menu .delimit__menu2--mauve {
+  color: #a56799;
+}
+.menu .delimit__menu2--bleu {
+  color: #6e4ccc;
+}
+.menu ul {
+  padding: 0;
+  margin: 0 4rem 2.5rem 4rem;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li span {
+  float: right;
+}
+
+.entree__menu2 {
+  color: #c77412;
+}
+
+.plat__menu2 {
+  color: #a56799;
+}
+
+.dessert__menu2 {
+  color: #6e4ccc;
+}
+
+.fin {
+  padding: 0 0 1.5rem 0;
+}
+.fin p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "devonshire";
+}
+.fin img {
+  width: 1.4rem;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
