@@ -4,7 +4,7 @@ La note enchantée : Devonshire + Sriracha (Menu) ;
 Le chic à la Française : Croissant one;
 Le délice des papilles : Dancing Script ;
 La palette du gout : Handlee; */
-@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Handlee|Kalam|Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Handlee|Kalam|Segoe+print|Sriracha&display=swap");
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -82,99 +82,131 @@ header h1 {
   }
 }
 
-.bloc {
-  width: 280px;
-  height: 370px;
+.menu1 {
+  width: 300px;
+  height: 390px;
   display: flex;
+  flex-direction: column;
   border: 1px #ededed solid;
   margin: 30px;
   box-shadow: 1px 1px 10px grey;
-}
-.bloc__un {
   background-color: #fcdfdb;
   color: #3c1218;
-  font-size: 20px;
 }
-.bloc__un p {
-  font-family: "devonshire";
-  font-size: 26px;
-  text-align: center;
-  margin: auto;
+.menu1 .titre {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 500ms;
+  text-align: center;
+  margin: auto;
+  font-family: "Segoe print";
+  font-size: 32px;
 }
-.bloc__un p:hover {
+.menu1 .titre:hover {
   transform: scale(1.15);
 }
-.bloc__un p span {
-  font-family: "Sriracha";
-  font-size: 26px;
+.menu1 .titre p {
+  margin: 0;
 }
-.bloc__deux {
+.menu1 .titre h3 {
+  font-family: "devonshire";
+  font-weight: normal;
+  margin: 0;
+  font-size: 28px;
+}
+
+.menu2 {
+  width: 300px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #ededed solid;
+  margin: 30px;
+  box-shadow: 1px 1px 10px grey;
   background-color: #fff5fe;
 }
-.bloc__deux p {
-  margin: auto;
+.menu2 .titre {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
   text-align: center;
+  color: #c77412;
+  font-family: "Times new roman";
+  font-weight: bold;
+  font-size: 30px;
+  margin: auto;
+}
+.menu2 .titre:hover {
+  transform: scale(1.15);
+}
+.menu2 .titre h3 {
   font-family: "Croissant one";
   font-size: 20px;
   background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#905bfd));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.menu3 {
+  width: 300px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #ededed solid;
+  margin: 30px;
+  box-shadow: 1px 1px 10px grey;
+  background-color: #e8e8e8;
+}
+.menu3 .titre {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 500ms;
+  text-align: center;
+  color: #0431df;
+  font-family: "Segoe print";
+  margin: auto;
+  font-size: 30px;
 }
-.bloc__deux p:hover {
+.menu3 .titre:hover {
   transform: scale(1.15);
 }
-.bloc__deux p span {
-  font-family: "Times new roman";
-  font-size: 30px;
-  color: #c77412;
-}
-.bloc__trois {
-  background-color: #e8e8e8;
-}
-.bloc__trois p {
-  margin: auto;
-  text-align: center;
-  font-family: "Dancing Script";
+.menu3 .titre h3 {
   font-size: 28px;
+  font-family: "Dancing Script";
   background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.menu4 {
+  width: 300px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #ededed solid;
+  margin: 30px;
+  box-shadow: 1px 1px 10px grey;
+  background-color: #f7fbf7;
+}
+.menu4 .titre {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 500ms;
+  text-align: center;
+  color: #347b31;
+  font-family: "Segoe print";
+  margin: auto;
+  font-size: 30px;
 }
-.bloc__trois p:hover {
+.menu4 .titre:hover {
   transform: scale(1.15);
 }
-.bloc__trois p span {
-  font-family: "Sriracha";
-}
-.bloc__quatre {
-  background-color: #f7fbf7;
-}
-.bloc__quatre p {
-  margin: auto;
-  text-align: center;
+.menu4 .titre h3 {
+  font-size: 28px;
   font-family: "Handlee";
-  font-size: 26px;
   background: -webkit-gradient(linear, left top, right bottom, from(#347b31), to(#94db68));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 500ms;
-}
-.bloc__quatre p:hover {
-  transform: scale(1.15);
-}
-.bloc__quatre p span {
-  font-family: "Sriracha";
 }
 
 .prochainement {
