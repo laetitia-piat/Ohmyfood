@@ -58,10 +58,12 @@ header {
   font-weight: 700;
   padding: 15px 0;
   height: 120px;
+  align-content: center;
+  justify-content: center;
 }
 header h1 {
   margin: 0;
-  font-size: 6em;
+  font-size: 5em;
 }
 
 #conteneur {
@@ -182,6 +184,7 @@ header h1 {
   border: 1px #ededed solid;
   color: #ffcc33;
   border-radius: 10px;
+  margin-bottom: 7em;
   background-color: #579c87;
 }
 .prochainement p {
@@ -195,13 +198,13 @@ footer {
   background-color: #579c87;
   display: flex;
   justify-content: space-between;
+  align-content: center;
   font-weight: 400;
   height: 60px;
   font-size: 25px;
   position: fixed;
   bottom: 0;
   width: 100%;
-  margin-top: 7rem;
 }
 footer a {
   margin: auto 10px auto 10px;
