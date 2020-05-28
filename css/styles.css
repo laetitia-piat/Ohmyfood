@@ -150,7 +150,7 @@ header h1 {
 .menu2 .titre h3 {
   font-family: "Croissant one";
   font-size: 20px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#905bfd));
+  background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#6e4ccc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -328,115 +328,59 @@ footer a:hover {
   margin-top: 0.5rem;
   font-family: "croissant one";
 }
-#menu2 .titre h3 {
+#menu2 .titre h2 {
   font-weight: normal;
   padding: 2rem 0;
-  background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#905bfd));
+  background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#6e4ccc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/*
-
-		&__menu3 {
-			font-family: 'Kalam';
-			background-color: #e8e8e8
-		}
-		&__menu4 {
-			font-family: 'Kalam';
-			background-color: #F1F8E9;
-		}
+.carte .or {
+  color: #c77412;
+}
+.carte .mauve {
+  color: #a56799;
+}
+.carte .bleu {
+  color: #6e4ccc;
+}
 
 /*------------------MENU 3--------------*/
-/*
-.titre {
-	&__menu2{
-	margin-top: 0.5rem;
-	font-family: 'croissant one';
-		h2 {
-		font-weight: normal; 
-		padding: 2rem 0;
-		background:
-    -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#905bfd));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-			}
-		}
-	&__menu3 {
-	margin-top: 0.5rem;
-	font-family: 'Dancing Script';
-		h2 {
-		background: 
-	-webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-		}
-	}
-	&__menu4 {
-	margin-top: 0.5rem;
-	font-family: 'Handlee';
-		h2 {
-	font-size: 2.5rem;		
-	background: 
-	-webkit-gradient(linear, left top, right bottom, from(#347b31), to(#94db68));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-		}
-		}
-	}
-
-.carte {
-	font-size: 0.9rem;
-	h3{
-		font-size: 1.1rem;
-		padding-bottom: 0.6rem;
-		margin: 0 3.5rem;
-			.un {
-			float:right;
-			padding-top: 0.9rem;
-			}	
-			.deux {
-			float: left;
-			padding-top: 0.9rem;
-			}
-		}
-		&__menu2{
-			&--or {
-				color: #c77412;
-			}
-			&--mauve {
-				color: #a56799;
-			}
-			&--bleu {
-				color: #6e4ccc;
-			}
-		}	
-		}
-		ul {
-			padding: 0;
-			margin: 0 4rem 2.5rem 4rem;
-			li {
-			list-style: none;
-				span {
-					float: right;
-				}
-			}
-
-
-	}	
-
-.entree__menu2{
-	color: #c77412;
+#menu3 {
+  max-width: 700px;
+  width: 80%;
+  margin: auto;
+  font-family: "Kalam";
+  background-color: #e8e8e8;
 }
-.plat__menu2 {
-	color: #a56799;
+#menu3 .titre {
+  margin-top: 0.5rem;
+  font-family: "Dancing Script";
 }
-.dessert__menu2 {
-	color: #6e4ccc;
+#menu3 .titre h2 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-
-*/
+/*------------------MENU 4--------------*/
+#menu4 {
+  max-width: 700px;
+  width: 80%;
+  margin: auto;
+  font-family: "Kalam";
+  background-color: #F1F8E9;
+}
+#menu4 .titre {
+  margin-top: 0.5rem;
+  font-family: "Handlee";
+}
+#menu4 .titre h2 {
+  font-size: 2.5rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#347b31), to(#94db68));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /*# sourceMappingURL=styles.css.map */
