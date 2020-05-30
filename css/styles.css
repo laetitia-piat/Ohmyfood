@@ -94,6 +94,17 @@ header h1 {
     margin: auto;
   }
 }
+@media (min-width: 1920px) {
+  #conteneur {
+    width: 1700px;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  #conteneur button {
+    margin: auto;
+    margin-top: 40px;
+  }
+}
 
 .menu1 {
   width: 300px;
@@ -265,6 +276,23 @@ footer a:hover {
   animation: shake 0.5s;
   animation-iteration-count: 4;
 }
+@media (max-width: 768px) {
+  footer {
+    font-size: 1em;
+  }
+}
+
+/*------------PAGE MENU GENERAL---------------*/
+.titre {
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .carte img {
+    width: 120px;
+    height: auto;
+  }
+}
 
 /*------------------MENU 1--------------*/
 #menu1 {
@@ -272,8 +300,15 @@ footer a:hover {
   color: #3c1218;
   font-family: "Kalam";
   max-width: 700px;
-  width: 80%;
+  min-height: 800px;
+  width: 90%;
   margin: auto;
+}
+#menu1 ul {
+  padding: 10px 20px;
+}
+#menu1 h3 {
+  margin: 10px 25px;
 }
 @media (max-width: 768px) {
   #menu1 {
@@ -281,9 +316,6 @@ footer a:hover {
   }
   #menu1 ul {
     margin: 25px;
-  }
-  #menu1 h3 {
-    margin: 20px;
   }
 }
 #menu1 .titre {
@@ -342,10 +374,17 @@ footer a:hover {
 /*------------------MENU 2--------------*/
 #menu2 {
   max-width: 700px;
-  width: 80%;
+  min-height: 800px;
+  width: 90%;
   margin: auto;
   font-family: "Times new roman";
   background-color: #fff5fe;
+}
+#menu2 ul {
+  padding: 10px 20px;
+}
+#menu2 h3 {
+  margin: 10px 25px;
 }
 @media (max-width: 768px) {
   #menu2 {
@@ -353,9 +392,6 @@ footer a:hover {
   }
   #menu2 ul {
     margin: 25px;
-  }
-  #menu2 h3 {
-    margin: 20px;
   }
 }
 #menu2 .titre {
@@ -383,10 +419,17 @@ footer a:hover {
 /*------------------MENU 3--------------*/
 #menu3 {
   max-width: 700px;
-  width: 80%;
+  min-height: 800px;
+  width: 90%;
   margin: auto;
   font-family: "Kalam";
   background-color: #e8e8e8;
+}
+#menu3 ul {
+  padding: 10px 20px;
+}
+#menu3 h3 {
+  margin: 10px 25px;
 }
 @media (max-width: 768px) {
   #menu3 {
@@ -394,9 +437,6 @@ footer a:hover {
   }
   #menu3 ul {
     margin: 25px;
-  }
-  #menu3 h3 {
-    margin: 20px;
   }
 }
 #menu3 .titre {
@@ -418,10 +458,17 @@ footer a:hover {
 /*------------------MENU 4--------------*/
 #menu4 {
   max-width: 700px;
-  width: 80%;
+  min-height: 800px;
+  width: 90%;
   margin: auto;
   font-family: "Kalam";
   background-color: #F1F8E9;
+}
+#menu4 ul {
+  padding: 10px 20px;
+}
+#menu4 h3 {
+  margin: 10px 25px;
 }
 @media (max-width: 768px) {
   #menu4 {
@@ -429,9 +476,6 @@ footer a:hover {
   }
   #menu4 ul {
     margin: 25px;
-  }
-  #menu4 h3 {
-    margin: 20px;
   }
 }
 #menu4 .titre {
