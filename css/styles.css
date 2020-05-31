@@ -4,11 +4,7 @@ La note enchantée : Devonshire + Segoe print (Menu) ;
 Le chic à la Française : Croissant one;
 Le délice des papilles : Dancing Script ;
 La palette du gout : Kaushan + Segoe print (Menu); */
-/*---------FONT---------*/
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Handlee|Kalam|Kaushan+Script|Segoe+print|Sriracha&display=swap");
-/*--------VARIABLES--------*/
-/*----------MIXINS------------*/
-/*----------ANIMATIONS---------*/
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -76,7 +72,7 @@ header {
 }
 @media (max-width: 768px) {
   header {
-    font-size: 0.9em;
+    font-size: 1.3em;
   }
 }
 @media (max-width: 425px) {
@@ -276,7 +272,7 @@ footer {
 }
 @media (max-width: 768px) {
   footer {
-    font-size: 0.9em;
+    font-size: 1.3em;
   }
 }
 @media (max-width: 425px) {
@@ -290,11 +286,6 @@ footer a {
 footer a:hover {
   animation: shake 0.5s;
   animation-iteration-count: 4;
-}
-@media (max-width: 768px) {
-  footer {
-    font-size: 1em;
-  }
 }
 
 /*------------PAGE MENU------------GENERAL------------*/
@@ -445,7 +436,7 @@ footer a:hover {
 #menu2 .titre h2 {
   font-weight: normal;
   padding: 2em 0;
-  background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#6e4ccc));
+  background: -webkit-linear-gradient(right, #6e4ccc, #c77412);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
