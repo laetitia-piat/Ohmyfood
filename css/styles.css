@@ -1,10 +1,14 @@
 @charset "UTF-8";
-/* FONT FONT FONT 
+/*----------- FONT----------------
 La note enchantée : Devonshire + Segoe print (Menu) ;
 Le chic à la Française : Croissant one;
 Le délice des papilles : Dancing Script ;
-La palette du gout : Handlee; */
+La palette du gout : Kaushan + Segoe print (Menu); */
+/*---------FONT---------*/
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Handlee|Kalam|Kaushan+Script|Segoe+print|Sriracha&display=swap");
+/*--------VARIABLES--------*/
+/*----------MIXINS------------*/
+/*----------ANIMATIONS---------*/
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -40,6 +44,7 @@ La palette du gout : Handlee; */
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+/*-------GENERAL-------*/
 body {
   font-size: 100%;
   font-family: "Montserrat", Arial;
@@ -64,7 +69,7 @@ header {
   background-color: #579c87;
   display: flex;
   font-weight: 700;
-  padding: 15px 0;
+  padding-top: 40px;
   height: 120px;
   align-content: center;
   justify-content: center;
@@ -74,11 +79,17 @@ header {
     font-size: 0.9em;
   }
 }
+@media (max-width: 425px) {
+  header {
+    font-size: 0.8em;
+  }
+}
 header h1 {
   margin: 0;
   font-size: 4.5em;
 }
 
+/*-------------PAGE D'ACCUEIL---------------*/
 #conteneur {
   display: flex;
   flex-wrap: wrap;
@@ -238,11 +249,10 @@ header h1 {
 .prochainement {
   width: 320px;
   height: 50px;
-  display: flex;
   border: 1px #ededed solid;
   color: #ffcc33;
   border-radius: 10px;
-  margin-bottom: 7em;
+  margin: 20px 0 73px 0;
   background-color: #579c87;
 }
 .prochainement p {
@@ -269,6 +279,11 @@ footer {
     font-size: 0.9em;
   }
 }
+@media (max-width: 425px) {
+  footer {
+    font-size: 0.8em;
+  }
+}
 footer a {
   margin: auto 10px auto 10px;
 }
@@ -282,15 +297,38 @@ footer a:hover {
   }
 }
 
-/*------------PAGE MENU GENERAL---------------*/
+/*------------PAGE MENU------------GENERAL------------*/
 .titre {
   padding: 10px 0;
 }
 
+.carte ul {
+  padding: 0;
+  margin: 0 4em 2.5em 4em;
+}
+.carte ul li {
+  list-style: none;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.carte ul span {
+  padding-left: 20px;
+}
 @media (max-width: 768px) {
   .carte img {
-    width: 120px;
+    width: 150px;
     height: auto;
+  }
+}
+@media (max-width: 425px) {
+  .carte img {
+    width: 70px;
+    height: auto;
+  }
+  .carte h3 {
+    margin: 10px 0;
+    font-size: 0.5em;
   }
 }
 
@@ -317,58 +355,56 @@ footer a:hover {
   #menu1 ul {
     margin: 25px;
   }
+  #menu1 h3 {
+    margin: 10px 15px;
+  }
+}
+@media (max-width: 425px) {
+  #menu1 ul {
+    margin: 0;
+  }
 }
 #menu1 .titre {
-  margin-top: 0.5rem;
+  margin-top: 0.3em;
   font-family: "devonshire";
-  font-size: 1.4rem;
+  font-size: 1.4em;
 }
 #menu1 .titre h2 {
   font-weight: normal;
 }
 #menu1 .titre img {
-  padding-top: 2rem;
+  padding-top: 1.5em;
 }
 
 .carte {
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 .carte h3 {
-  font-size: 1.1rem;
-  padding-bottom: 0.6rem;
-  margin: 0 3.5rem;
+  font-size: 1.5em;
+  padding-bottom: 0.7sem;
+  margin: 0 3.5em;
 }
 .carte h3 .un {
   float: right;
-  padding-top: 0.9rem;
+  padding-top: 0.9em;
 }
 .carte h3 .deux {
   float: left;
-  padding-top: 0.9rem;
-}
-.carte ul {
-  padding: 0;
-  margin: 0 4rem 2.5rem 4rem;
-}
-.carte ul li {
-  list-style: none;
-}
-.carte ul li span {
-  float: right;
+  padding-top: 0.9em;
 }
 
 .fin {
-  padding: 0 0 1.5rem 0;
+  padding: 0 0 1.5em 0;
 }
 .fin p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7em;
   font-family: "devonshire";
 }
 .fin img {
-  width: 1.4rem;
+  width: 1em;
   height: auto;
-  margin-right: 0.5rem;
+  margin-right: 0.5em;
 }
 
 /*------------------MENU 2--------------*/
@@ -393,14 +429,22 @@ footer a:hover {
   #menu2 ul {
     margin: 25px;
   }
+  #menu2 h3 {
+    margin: 10px 15px;
+  }
+}
+@media (max-width: 425px) {
+  #menu2 ul {
+    margin: 0;
+  }
 }
 #menu2 .titre {
-  margin-top: 0.5rem;
+  margin-top: 0.5em;
   font-family: "croissant one";
 }
 #menu2 .titre h2 {
   font-weight: normal;
-  padding: 2rem 0;
+  padding: 2em 0;
   background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#6e4ccc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -437,6 +481,14 @@ footer a:hover {
   }
   #menu3 ul {
     margin: 25px;
+  }
+  #menu3 h3 {
+    margin: 10px 15px;
+  }
+}
+@media (max-width: 425px) {
+  #menu3 ul {
+    margin: 0;
   }
 }
 #menu3 .titre {
@@ -477,9 +529,17 @@ footer a:hover {
   #menu4 ul {
     margin: 25px;
   }
+  #menu4 h3 {
+    margin: 10px 15px;
+  }
+}
+@media (max-width: 425px) {
+  #menu4 ul {
+    margin: 0;
+  }
 }
 #menu4 .titre {
-  margin-top: 0.5rem;
+  margin-top: 0.5em;
   font-family: "Kaushan Script";
 }
 #menu4 .titre h2 {
