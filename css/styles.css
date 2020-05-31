@@ -42,7 +42,6 @@ La palette du gout : Kaushan + Segoe print (Menu); */
 }
 /*-------GENERAL-------*/
 body {
-  font-size: 100%;
   font-family: "Montserrat", Arial;
   margin: 0;
 }
@@ -70,19 +69,14 @@ header {
   align-content: center;
   justify-content: center;
 }
-@media (max-width: 768px) {
-  header {
-    font-size: 1.3em;
-  }
-}
-@media (max-width: 425px) {
-  header {
-    font-size: 0.8em;
-  }
-}
 header h1 {
   margin: 0;
   font-size: 4.5em;
+}
+@media (max-width: 425px) {
+  header h1 {
+    font-size: 3em;
+  }
 }
 
 /*-------------PAGE D'ACCUEIL---------------*/
@@ -265,19 +259,14 @@ footer {
   align-content: center;
   font-weight: 400;
   height: 60px;
-  font-size: 1.5em;
+  font-size: 2.5em;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
-@media (max-width: 768px) {
-  footer {
-    font-size: 1.3em;
-  }
-}
 @media (max-width: 425px) {
   footer {
-    font-size: 0.8em;
+    font-size: 1.3em;
   }
 }
 footer a {
@@ -293,6 +282,28 @@ footer a:hover {
   padding: 10px 0;
 }
 
+.carte {
+  font-size: 0.9em;
+}
+.carte h3 {
+  font-size: 1.5em;
+  padding-bottom: 0.7sem;
+  margin: 0 3.5em;
+}
+@media (max-width: 425px) {
+  .carte h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+}
+.carte h3 .un {
+  float: right;
+  padding-top: 0.9em;
+}
+.carte h3 .deux {
+  float: left;
+  padding-top: 0.9em;
+}
 .carte ul {
   padding: 0;
   margin: 0 4em 2.5em 4em;
@@ -316,10 +327,6 @@ footer a:hover {
   .carte img {
     width: 70px;
     height: auto;
-  }
-  .carte h3 {
-    margin: 10px 0;
-    font-size: 0.5em;
   }
 }
 
@@ -348,7 +355,7 @@ footer a:hover {
     margin: 25px;
   }
   #menu1 h3 {
-    margin: 10px 15px;
+    margin: 10px 10px;
   }
 }
 @media (max-width: 425px) {
@@ -366,23 +373,6 @@ footer a:hover {
 }
 #menu1 .titre img {
   padding-top: 1.5em;
-}
-
-.carte {
-  font-size: 0.9em;
-}
-.carte h3 {
-  font-size: 1.5em;
-  padding-bottom: 0.7sem;
-  margin: 0 3.5em;
-}
-.carte h3 .un {
-  float: right;
-  padding-top: 0.9em;
-}
-.carte h3 .deux {
-  float: left;
-  padding-top: 0.9em;
 }
 
 .fin {
@@ -423,7 +413,7 @@ footer a:hover {
     margin: 25px;
   }
   #menu2 h3 {
-    margin: 10px 15px;
+    margin: 10px 10px;
   }
 }
 @media (max-width: 425px) {
@@ -477,7 +467,7 @@ footer a:hover {
     margin: 25px;
   }
   #menu3 h3 {
-    margin: 10px 15px;
+    margin: 10px 10px;
   }
 }
 @media (max-width: 425px) {
@@ -525,7 +515,7 @@ footer a:hover {
     margin: 25px;
   }
   #menu4 h3 {
-    margin: 10px 15px;
+    margin: 10px 10px;
   }
 }
 @media (max-width: 425px) {
