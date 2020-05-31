@@ -328,6 +328,7 @@ footer a:hover {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "Kalam";
+  box-shadow: 1px 1px 10px grey;
   max-width: 700px;
   min-height: 800px;
   width: 90%;
@@ -400,6 +401,7 @@ footer a:hover {
 
 /*------------------MENU 2--------------*/
 #menu2 {
+  box-shadow: 1px 1px 10px grey;
   max-width: 700px;
   min-height: 800px;
   width: 90%;
@@ -453,6 +455,7 @@ footer a:hover {
 
 /*------------------MENU 3--------------*/
 #menu3 {
+  box-shadow: 1px 1px 10px grey;
   max-width: 700px;
   min-height: 800px;
   width: 90%;
@@ -500,6 +503,7 @@ footer a:hover {
 
 /*------------------MENU 4--------------*/
 #menu4 {
+  box-shadow: 1px 1px 10px grey;
   max-width: 700px;
   min-height: 800px;
   width: 90%;
