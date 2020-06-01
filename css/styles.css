@@ -2,7 +2,7 @@
 /*----------- FONT----------------
 La note enchantée : Devonshire + Segoe print (Menu) ;
 Le chic à la Française : Croissant one;
-Le délice des papilles : Dancing Script ;
+Le délice des papilles : Dancing Script + Kalam (Menu) ;
 La palette du gout : Kaushan + Segoe print (Menu); */
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Handlee|Kalam|Kaushan+Script|Segoe+print|Sriracha&display=swap");
 @keyframes shake {
@@ -48,312 +48,6 @@ La palette du gout : Kaushan + Segoe print (Menu); */
     opacity: 1;
   }
 }
-/*-------GENERAL-------*/
-body {
-  font-family: "Montserrat", Arial;
-  margin: 0;
-}
-body h2, body h3 {
-  text-align: center;
-}
-
-main {
-  margin-bottom: 80px;
-}
-
-a {
-  text-decoration: none;
-  color: #ffcc33;
-}
-
-header {
-  color: #ffcc33;
-  text-align: center;
-  background-color: #579c87;
-  display: flex;
-  font-weight: 700;
-  padding-top: 40px;
-  height: 120px;
-  align-content: center;
-  justify-content: center;
-}
-header h1 {
-  margin: 0;
-  font-size: 4.5em;
-}
-@media (max-width: 425px) {
-  header h1 {
-    font-size: 3em;
-  }
-}
-
-button span {
-  animation-name: points;
-  animation-duration: 1200ms;
-  animation-iteration-count: infinite;
-}
-
-button span:nth-child(2) {
-  animation-delay: 400ms;
-}
-
-button span:nth-child(3) {
-  animation-delay: 800ms;
-}
-
-/*-------------PAGE D'ACCUEIL---------------*/
-#conteneur {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  width: 740px;
-  margin: auto;
-}
-@media (max-width: 768px) {
-  #conteneur {
-    width: 100%;
-    align-content: center;
-    margin: auto;
-  }
-}
-@media (min-width: 1920px) {
-  #conteneur {
-    width: 1700px;
-    margin-top: 40px;
-    justify-content: space-between;
-  }
-  #conteneur button {
-    margin: auto;
-    margin-top: 40px;
-  }
-}
-
-.menu1 {
-  width: 300px;
-  height: 390px;
-  display: flex;
-  flex-direction: column;
-  border: 1px #ededed solid;
-  margin: 30px;
-  box-shadow: 1px 1px 10px grey;
-  background-color: #fcdfdb;
-  color: #3c1218;
-}
-.menu1 .titre {
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 500ms;
-  text-align: center;
-  margin: auto;
-  font-family: "Segoe print";
-  font-size: 2em;
-}
-.menu1 .titre:hover {
-  transform: scale(1.15);
-}
-.menu1 .titre p {
-  margin: 0;
-}
-.menu1 .titre h3 {
-  font-family: "devonshire";
-  font-weight: normal;
-  margin: 0;
-  font-size: 1em;
-}
-
-.menu2 {
-  width: 300px;
-  height: 390px;
-  display: flex;
-  flex-direction: column;
-  border: 1px #ededed solid;
-  margin: 30px;
-  box-shadow: 1px 1px 10px grey;
-  background-color: #fff5fe;
-}
-.menu2 .titre {
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 500ms;
-  text-align: center;
-  color: #c77412;
-  font-family: "Times new roman";
-  font-weight: bold;
-  font-size: 2em;
-  margin: auto;
-}
-.menu2 .titre:hover {
-  transform: scale(1.15);
-}
-.menu2 .titre h3 {
-  font-family: "Croissant one";
-  font-size: 0.7em;
-  background: -webkit-linear-gradient(right, #6e4ccc, #c77412);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.menu3 {
-  width: 300px;
-  height: 390px;
-  display: flex;
-  flex-direction: column;
-  border: 1px #ededed solid;
-  margin: 30px;
-  box-shadow: 1px 1px 10px grey;
-  background-color: #e8e8e8;
-}
-.menu3 .titre {
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 500ms;
-  text-align: center;
-  color: #0431df;
-  font-family: "Segoe print";
-  margin: auto;
-  font-size: 2em;
-}
-.menu3 .titre:hover {
-  transform: scale(1.15);
-}
-.menu3 .titre h3 {
-  font-size: 1em;
-  font-weight: lighter;
-  font-family: "Dancing Script";
-  background: -webkit-linear-gradient(right, #0887fb, #0431df);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.menu4 {
-  width: 300px;
-  height: 390px;
-  display: flex;
-  flex-direction: column;
-  border: 1px #ededed solid;
-  margin: 30px;
-  box-shadow: 1px 1px 10px grey;
-  background-color: #f7fbf7;
-}
-.menu4 .titre {
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 500ms;
-  text-align: center;
-  color: #347b31;
-  font-family: "Segoe print";
-  margin: auto;
-  font-size: 2em;
-}
-.menu4 .titre:hover {
-  transform: scale(1.15);
-}
-.menu4 .titre h3 {
-  font-size: 1em;
-  font-family: "Kaushan Script";
-  font-weight: lighter;
-  background: -webkit-linear-gradient(right, #beff7f, #347b31);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.prochainement {
-  width: 320px;
-  height: 50px;
-  border: 1px #ededed solid;
-  color: #ffcc33;
-  border-radius: 10px;
-  margin: 20px 0 73px 0;
-  background-color: #579c87;
-  font-size: 30px;
-}
-
-footer {
-  color: #ffcc33;
-  text-align: center;
-  background-color: #579c87;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  font-weight: 400;
-  height: 60px;
-  font-size: 2.1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-@media (max-width: 768px) {
-  footer {
-    font-size: 1.6em;
-  }
-}
-@media (max-width: 425px) {
-  footer {
-    font-size: 1.3em;
-  }
-}
-footer a {
-  margin: auto 10px auto 10px;
-}
-footer a:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: 4;
-}
-
-/*------------PAGE MENU------------GENERAL------------*/
-.titre {
-  padding: 10px 0;
-}
-
-.carte {
-  font-size: 0.9em;
-}
-.carte h3 {
-  font-size: 1.5em;
-  padding-bottom: 0.7em;
-  margin: 0 3.5em;
-}
-@media (max-width: 425px) {
-  .carte h3 {
-    margin: 10px 0;
-    font-size: 1.2em;
-  }
-}
-.carte h3 .un {
-  float: right;
-  padding-top: 0.9em;
-}
-.carte h3 .deux {
-  float: left;
-  padding-top: 0.9em;
-}
-.carte ul {
-  padding: 0;
-  margin: 0 4em 2.5em 4em;
-}
-.carte ul li {
-  list-style: none;
-  padding-bottom: 1em;
-  display: flex;
-  justify-content: space-between;
-}
-.carte ul span {
-  padding-left: 20px;
-}
-@media (max-width: 768px) {
-  .carte img {
-    width: 150px;
-    height: auto;
-  }
-}
-@media (max-width: 425px) {
-  .carte img {
-    width: 70px;
-    height: auto;
-  }
-}
-
 /*------------------MENU 1--------------*/
 #menu1 {
   background-color: #fcdfdb;
@@ -399,12 +93,12 @@ footer a:hover {
   padding-top: 1.5em;
 }
 
-.carte span {
+.carte .souligne {
   background: linear-gradient(to top, #3c1218 3px, transparent 1px) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.6s;
 }
-.carte span:hover {
+.carte .souligne:hover {
   background-size: 100% 100%;
 }
 
@@ -469,34 +163,34 @@ footer a:hover {
 .carte .or {
   color: #c77412;
 }
-.carte .or span {
+.carte .or .souligne {
   background: linear-gradient(to top, #c77412 3px, transparent 1px) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.6s;
 }
-.carte .or span:hover {
+.carte .or .souligne:hover {
   background-size: 100% 100%;
 }
 .carte .mauve {
   color: #a56799;
 }
-.carte .mauve span {
+.carte .mauve .souligne {
   background: linear-gradient(to top, #a56799 3px, transparent 1px) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.6s;
 }
-.carte .mauve span:hover {
+.carte .mauve .souligne:hover {
   background-size: 100% 100%;
 }
 .carte .bleu {
   color: #6e4ccc;
 }
-.carte .bleu span {
+.carte .bleu .souligne {
   background: linear-gradient(to top, #6e4ccc 3px, transparent 1px) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.6s;
 }
-.carte .bleu span:hover {
+.carte .bleu .souligne:hover {
   background-size: 100% 100%;
 }
 
@@ -547,28 +241,28 @@ footer a:hover {
 #menu3 .carte h3 {
   font-weight: normal;
 }
-#menu3 .carte .fonce span {
+#menu3 .carte .fonce .souligne {
   background: linear-gradient(to top, #0431df 3px, transparent 1px) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.6s;
 }
-#menu3 .carte .fonce span:hover {
+#menu3 .carte .fonce .souligne:hover {
   background-size: 100% 100%;
 }
-#menu3 .carte .normal span {
+#menu3 .carte .normal .souligne {
   background: linear-gradient(to top, #0670f3 3px, transparent 1px) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.6s;
 }
-#menu3 .carte .normal span:hover {
+#menu3 .carte .normal .souligne:hover {
   background-size: 100% 100%;
 }
-#menu3 .carte .clair span {
+#menu3 .carte .clair .souligne {
   background: linear-gradient(to top, #229df9 3px, transparent 1px) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.6s;
 }
-#menu3 .carte .clair span:hover {
+#menu3 .carte .clair .souligne:hover {
   background-size: 100% 100%;
 }
 
@@ -618,13 +312,328 @@ footer a:hover {
 #menu4 .carte h3 {
   font-weight: normal;
 }
-#menu4 .carte h3 span {
+#menu4 .carte h3 .souligne {
   background: linear-gradient(to top, #77c359 3px, transparent 1px) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.6s;
 }
-#menu4 .carte h3 span:hover {
+#menu4 .carte h3 .souligne:hover {
   background-size: 100% 100%;
+}
+
+/*-------------PAGE D'ACCUEIL---------------*/
+#conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 740px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  #conteneur {
+    width: 100%;
+    align-content: center;
+    margin: auto;
+  }
+}
+@media (min-width: 1920px) {
+  #conteneur {
+    width: 1700px;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  #conteneur button {
+    margin: auto;
+    margin-top: 40px;
+  }
+}
+
+.menu1 {
+  width: 300px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #ededed solid;
+  margin: 30px;
+  box-shadow: 1px 1px 10px grey;
+  background-color: #fcdfdb;
+  color: #3c1218;
+}
+.menu1 .titre {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+  text-align: center;
+  margin: auto;
+  font-family: "Segoe print";
+  font-size: 2em;
+}
+.menu1 .titre:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+.menu1 .titre p {
+  margin: 0;
+}
+.menu1 .titre h3 {
+  font-family: "devonshire";
+  font-weight: normal;
+  margin: 0;
+  font-size: 1em;
+}
+
+.menu2 {
+  width: 300px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #ededed solid;
+  margin: 30px;
+  box-shadow: 1px 1px 10px grey;
+  background-color: #fff5fe;
+}
+.menu2 .titre {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+  text-align: center;
+  color: #c77412;
+  font-family: "Times new roman";
+  font-weight: bold;
+  font-size: 2em;
+  margin: auto;
+}
+.menu2 .titre:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+.menu2 .titre h3 {
+  font-family: "Croissant one";
+  font-size: 0.7em;
+  background: -webkit-linear-gradient(right, #6e4ccc, #c77412);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu3 {
+  width: 300px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #ededed solid;
+  margin: 30px;
+  box-shadow: 1px 1px 10px grey;
+  background-color: #e8e8e8;
+}
+.menu3 .titre {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+  text-align: center;
+  color: #0431df;
+  font-family: "Segoe print";
+  margin: auto;
+  font-size: 2em;
+}
+.menu3 .titre:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+.menu3 .titre h3 {
+  font-size: 1em;
+  font-weight: lighter;
+  font-family: "Dancing Script";
+  background: -webkit-linear-gradient(right, #0887fb, #0431df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu4 {
+  width: 300px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #ededed solid;
+  margin: 30px;
+  box-shadow: 1px 1px 10px grey;
+  background-color: #f7fbf7;
+}
+.menu4 .titre {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+  text-align: center;
+  color: #347b31;
+  font-family: "Segoe print";
+  margin: auto;
+  font-size: 2em;
+}
+.menu4 .titre:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+.menu4 .titre h3 {
+  font-size: 1em;
+  font-family: "Kaushan Script";
+  font-weight: lighter;
+  background: -webkit-linear-gradient(right, #beff7f, #347b31);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prochainement {
+  width: 320px;
+  height: 50px;
+  border: 1px #ededed solid;
+  color: #ffcc33;
+  border-radius: 10px;
+  margin: 20px 0 73px 0;
+  background-color: #579c87;
+  font-size: 30px;
+}
+
+footer {
+  color: #ffcc33;
+  text-align: center;
+  background-color: #579c87;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-weight: 400;
+  height: 60px;
+  font-size: 2.1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  footer {
+    font-size: 1.6em;
+  }
+}
+@media (max-width: 425px) {
+  footer {
+    font-size: 1.3em;
+  }
+}
+footer a {
+  margin: auto 10px auto 10px;
+}
+footer a:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 4;
+}
+
+/*-------GENERAL-------*/
+body {
+  font-family: "Montserrat", Arial;
+  margin: 0;
+}
+body h2, body h3 {
+  text-align: center;
+}
+
+main {
+  margin-bottom: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffcc33;
+}
+
+header {
+  color: #ffcc33;
+  text-align: center;
+  background-color: #579c87;
+  display: flex;
+  font-weight: 700;
+  padding-top: 40px;
+  height: 120px;
+  align-content: center;
+  justify-content: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 4.5em;
+}
+@media (max-width: 425px) {
+  header h1 {
+    font-size: 3em;
+  }
+}
+
+button span {
+  animation-name: points;
+  animation-duration: 1200ms;
+  animation-iteration-count: infinite;
+}
+
+button span:nth-child(2) {
+  animation-delay: 400ms;
+}
+
+button span:nth-child(3) {
+  animation-delay: 800ms;
+}
+
+/*------------PAGE MENU------------GENERAL------------*/
+.titre {
+  padding: 10px 0;
+}
+
+.carte {
+  font-size: 0.9em;
+}
+.carte h3 {
+  font-size: 1.5em;
+  padding-bottom: 0.7em;
+  margin: 0 3.5em;
+}
+@media (max-width: 768px) {
+  .carte h3 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 425px) {
+  .carte h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+}
+.carte h3 .un {
+  float: right;
+  padding-top: 0.9em;
+}
+.carte h3 .deux {
+  float: left;
+  padding-top: 0.9em;
+}
+.carte ul {
+  padding: 0;
+  margin: 0 4em 2.5em 4em;
+}
+.carte ul li {
+  list-style: none;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.carte ul span {
+  padding-left: 20px;
+}
+@media (max-width: 768px) {
+  .carte img {
+    width: 130px;
+    height: auto;
+  }
+}
+@media (max-width: 425px) {
+  .carte img {
+    width: 70px;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
